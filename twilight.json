@@ -273,6 +273,61 @@
     ],
     "components": [
         {
+            "key": "8c77cbb9-bd83-4a53-9e45-0f9085e61e88",
+            "title": "مقدمة رشفة",
+            "icon": "sicon-info-circle",
+            "path": "home.rashfa-intro",
+            "fields": [
+                {
+                    "type": "string",
+                    "icon": "sicon-format-text-alt",
+                    "label": "عنوان صغير",
+                    "id": "subtitle",
+                    "required": false,
+                    "format": "text",
+                    "value": "مرحباً بكم"
+                },
+                {
+                    "type": "string",
+                    "icon": "sicon-format-text-alt",
+                    "label": "عنوان رئيسي",
+                    "id": "title",
+                    "required": true,
+                    "format": "text",
+                    "value": "مقدمة رشفة"
+                },
+                {
+                    "type": "string",
+                    "icon": "sicon-format-text-alt",
+                    "label": "وصف",
+                    "id": "description",
+                    "required": false,
+                    "format": "textarea",
+                    "value": "نقدم لكم أفضل أنواع القهوة المختصة."
+                },
+                {
+                    "type": "string",
+                    "icon": "sicon-link",
+                    "label": "نص الزر",
+                    "id": "button_text",
+                    "required": false,
+                    "format": "text",
+                    "value": "تسوق الآن"
+                },
+                {
+                    "type": "string",
+                    "icon": "sicon-link",
+                    "label": "رابط الزر",
+                    "id": "button_url",
+                    "required": false,
+                    "format": "url",
+                    "inputType": "url",
+                    "placeholder": "أدخل الرابط هنا...",
+                    "value": null
+                }
+            ]
+        },
+        {
             "key": "186b3f4f-25cf-4d3c-abca-cef7eed6f0ab",
             "title": {
                 "en": "Enhances Animated Images",
