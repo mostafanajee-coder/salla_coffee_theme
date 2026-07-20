@@ -3,15 +3,15 @@
         {% if subtitle %}
             <h4 class="text-sm font-semibold text-primary-dark mb-2">{{ subtitle }}</h4>
         {% endif %}
-        
+
         {% if title %}
             <h2 class="text-2xl md:text-3xl font-bold text-gray-800 dark:text-white mb-4">{{ title }}</h2>
         {% endif %}
-        
+
         {% if description %}
             <p class="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto md:mx-0">{{ description }}</p>
         {% endif %}
-        
+
         {% if button_text and button_url %}
             <a href="{{ button_url }}" class="btn btn-primary inline-flex items-center justify-center px-6 py-2.5 rounded-md font-medium transition-colors">
                 {{ button_text }}
