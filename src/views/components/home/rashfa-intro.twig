@@ -1,20 +1,31 @@
-<section class="s-block s-block--rashfa-intro container">
+{#
+| Variable                  | Type    | Description                                                                  |
+|---------------------------|---------|------------------------------------------------------------------------------|
+| component                 | object  | Contains merchant settings for fields from twilight.json `component` section |
+| component.subtitle        | string  | Small introductory heading                                                   |
+| component.title           | string  | Main heading                                                                 |
+| component.description     | string  | Supporting text                                                              |
+| component.button_text     | string  | Call-to-action label                                                         |
+| component.button_url      | string  | Call-to-action URL                                                           |
+| position                  | int     | Sorting number starting from zero                                            |
+#}
+<section class="s-block s-block--rashfa-intro container" data-rashfa-component="intro">
     <div class="rashfa-intro-wrapper text-center md:text-start px-4 py-8 md:py-12 bg-gray-50 dark:bg-darker rounded-lg shadow-sm">
-        {% if subtitle %}
-            <h4 class="text-sm font-semibold text-primary-dark mb-2">{{ subtitle }}</h4>
+        {% if component.subtitle %}
+            <h4 class="text-sm font-semibold text-primary-dark mb-2">{{ component.subtitle }}</h4>
         {% endif %}
 
-        {% if title %}
-            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 dark:text-white mb-4">{{ title }}</h2>
+        {% if component.title %}
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-800 dark:text-white mb-4">{{ component.title }}</h2>
         {% endif %}
 
-        {% if description %}
-            <p class="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto md:mx-0">{{ description }}</p>
+        {% if component.description %}
+            <p class="text-gray-600 dark:text-gray-300 mb-6 max-w-2xl mx-auto md:mx-0">{{ component.description }}</p>
         {% endif %}
 
-        {% if button_text and button_url %}
-            <a href="{{ button_url }}" class="btn btn-primary inline-flex items-center justify-center px-6 py-2.5 rounded-md font-medium transition-colors">
-                {{ button_text }}
+        {% if component.button_text and component.button_url %}
+            <a href="{{ component.button_url }}" class="btn btn-primary inline-flex items-center justify-center px-6 py-2.5 rounded-md font-medium transition-colors">
+                {{ component.button_text }}
             </a>
         {% endif %}
     </div>
