@@ -18,7 +18,7 @@
   "author": "Salla",
   "dependencies": {
     "@babel/runtime": "^8.0.0",
-    "animejs": "^3.2.2",
+    "animejs": "^4.5.0",
     "fslightbox": "^3.7.5",
     "lite-youtube-embed": "^0.3.4",
     "mmenu-light": "^3.2.2",
