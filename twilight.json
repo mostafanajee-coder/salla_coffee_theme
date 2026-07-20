@@ -1,10 +1,10 @@
 {
     "name": {
-        "ar": "رائد",
-        "en": "Theme Raed"
+        "ar": "رشفة",
+        "en": "Rashfa Coffee"
     },
-    "repository": "https://github.com/SallaApp/theme-raed",
-    "author_email": "support@salla.sa",
+    "repository": "https://github.com/mostafanajee-coder/salla_coffee_theme",
+    "author_email": "mostafa.najee@gmail.com",
     "features": [
         "mega-menu",
         "fonts",
