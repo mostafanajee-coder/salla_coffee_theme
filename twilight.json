@@ -274,6 +274,7 @@
     "components": [
         {
             "key": "8c77cbb9-bd83-4a53-9e45-0f9085e61e88",
+            "name": "rashfa-intro",
             "title": "مقدمة رشفة",
             "icon": "sicon-info-circle",
             "path": "home.rashfa-intro",
